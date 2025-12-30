@@ -16,12 +16,7 @@ import { ROUTE_PATH } from '@/constants/app';
 export default function AppContainer() {
   return (
     <NotificationProvider>
-      <BrowserRouter
-        future={{
-          v7_relativeSplatPath: true,
-          v7_startTransition: true,
-        }}
-      >
+      <BrowserRouter>
         <Suspense fallback={<PageLoader />}>
           <Routes>
             {/* Public */}
